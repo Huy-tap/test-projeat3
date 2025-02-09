@@ -98,15 +98,14 @@ body {
 }
 .navbar__link:hover {
   color: #fff;
-  font-size: 1.6rem;
   text-shadow: 1px 0 0px #fff;
-  line-height: 2.8rem;
 }
 .action__link {
   position: relative;
 }
 .action__link:first-child::before {
   position: absolute;
+  display: inline-block;
   content: "";
   width: 6px;
   height: 6px;
@@ -366,7 +365,7 @@ figure .services__img {
 .team-item__avatar {
   height: 314px;
   display: block;
-  width: 100%;
+  max-width: 100%;
   object-fit: cover;
   transition: 0.25s;
 }
